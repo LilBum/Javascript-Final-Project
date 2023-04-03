@@ -1,0 +1,187 @@
+/* Set box-sizing to border-box to include padding and border in element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Apply some basic styles to the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #454545;
+    background-color: #F6E7EA;
+}
+
+/* Set some default styles for headings */
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Apply styles to the header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F6E7EA;
+    border-bottom: 4px solid #454545;
+    padding: 20px;
+}
+
+.icon img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.icon2 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.icon2 {
+    order: 2;
+}
+
+.name {
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+}
+
+/* Apply styles to the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #454545, #3b3b3b);
+    padding: 20px 0 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-link-wrapper a {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nav-link-wrapper:last-child {
+    order: 1;
+}
+
+.nav-link-wrapper a:hover {
+    background: #F6E7EA;
+    color: #454545;
+}
+
+/* Apply styles to the product container */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.leftColumn {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 98%;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 150px;
+}
+
+/* Apply styles to the form container */
+#form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #454545;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 30px;
+    max-height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* set the width to 100% */
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #F6E7EA;
+    margin-top: 10px;
+}
+
+input {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Apply styles to the focused form inputs */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #454545;
+}
+
+/* Apply styles to the form button */
+button {
+    background-color: #F6E7EA;
+    color: #454545;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}

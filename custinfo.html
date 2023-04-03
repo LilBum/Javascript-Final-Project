@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Information</title>
+    <link rel="stylesheet" href="custinfo.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="icon">
+                <img src="./images/plushy4.png" height="200" width="200" alt="picture of plushy 4">
+            </div>
+            <div class="name">
+                <h1>Plushy Co.</h1>
+            </div>
+            <div class="company">
+                <h3>15245 18th Place, SW</h3>
+                <h3>Tartarus, WA</h3>
+                <h3>41243</h3>
+                <h3>425-884-9803</h3>
+            </div>
+        </div>
+        <div class="nav-wrapper leftColumn">
+            <div class="nav-link-wrapper">
+                <a href="order.html">Order</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="aboutUs.html">About</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+            <div class="icon2">
+                <img src="./images/plushy5.png">
+            </div>
+        </div>
+        <h1>Customer Information</h1>
+        <div id="form-container">
+            <form id="customer-info-form">
+                <label for="first-name-input">First Name:</label>
+                <input type="text" id="first-name-input" name="first-name" required>
+
+                <label for="last-name-input">Last Name:</label>
+                <input type="text" id="last-name-input" name="last-name" required>
+
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email" required>
+
+                <label for="address-input">Address:</label>
+                <input type="text" id="address-input" name="address" required>
+
+                <label for="apt-input">Apartment Number:</label>
+                <input type="text" id="apt-input" name="apt">
+
+                <label for="city-input">City:</label>
+                <input type="text" id="city-input" name="city" required>
+
+                <label for="state-input">State:</label>
+                <input type="text" id="state-input" name="state" required>
+
+                <label for="zip-input">Zip Code:</label>
+                <input type="text" id="zip-input" name="zip" required>
+
+                <label for="phone-input">Phone Number:</label>
+                <input type="tel" id="phone-input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <div id="product-ordered"></div>
+
+        </div>
+
+
+</body>
+
+</html>

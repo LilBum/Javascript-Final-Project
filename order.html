@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Alex Urs-Badet">
+    <meta name="keywords" content="Alex Urs-Badet, Online shop">
+    <meta name="description" content="Alex's website">
+    <meta charset='UTF-8'>
+    <title>Project</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+
+
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="icon">
+                <img src="./images/plushy4.png" height="200" width="200" alt="picture of plushy 4">
+            </div>
+            <div class="name">
+                <h1>Plushy Co.</h1>
+            </div>
+            <div class="company">
+                <h3>15245 18th Place, SW</h3>
+                <h3>Tartarus, WA</h3>
+                <h3>41243</h3>
+                <h3>425-884-9803</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-wrapper leftColumn">
+                <div class="nav-link-wrapper">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="order.html">Order</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="contactUs.html">Contact Us</a>
+                </div>
+                <div class="icon2">
+                    <img src="./images/plushy5.png">
+                </div>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="./images/plushy1.png" alt="picture of plushy 1">
+                    <div class="product1">
+                        <h2>Round-Dog-Plushy</h2>
+                    </div>
+                    <label for="size-select1">Size:</label>
+                    <select name="size" id="size-select1">
+                        <option value="small" data-price="13.99">Small</option>
+                        <option value="medium" data-price="17.95">Medium</option>
+                        <option value="large" data-price="23.85">Large</option>
+                    </select>
+                    <label for="fabric-select1">Fabric Type:</label>
+                    <select name="fabric" id="fabric-select1">
+                        <option value="polyester">Polyester</option>
+                        <option value="minky fleece">Minky Fleece</option>
+                    </select>
+                    <input type="radio" name="cart" class="add-to-cart-btn" data-product-name="Plushy 1"
+                        data-image="./images/plushy1.png">
+                    <label for="html">Add to cart</label>
+                </div>
+
+                <div class="product">
+                    <img src="./images/plushy2.png" alt="picture of plushy 2">
+                    <h2>Avocado-Plushy</h2>
+                    <label for="size-select2">Size:</label>
+                    <select name="size" id="size-select2">
+                        <option value="small" data-price="13.99">Small</option>
+                        <option value="medium" data-price="17.95">Medium</option>
+                        <option value="large" data-price="23.85">Large</option>
+                    </select>
+                    <label for="fabric-select2">Fabric Type:</label>
+                    <select name="fabric" id="fabric-select2">
+                        <option value="polyester">Polyester</option>
+                        <option value="minky fleece">Minky Fleece</option>
+                    </select>
+                    <input type="radio" name="cart" class="add-to-cart-btn" data-product-name="Plushy 2"
+                        data-image="./images/plushy2.png">
+                    <label for="html">Add to cart</label>
+                </div>
+
+                <div class="product">
+                    <img src="./images/plushy3.png" alt="picture of plushy 3">
+                    <h2>Half-Octo-Plushy</h2>
+                    <label for="size-select3">Size:</label>
+                    <select name="size" id="size-select3">
+                        <option value="small" data-price="13.99">Small</option>
+                        <option value="medium" data-price="17.95">Medium</option>
+                        <option value="large" data-price="23.85">Large</option>
+                    </select>
+                    <label for="fabric-select3">Fabric Type:</label>
+                    <select name="fabric" id="fabric-select3">
+                        <option value="polyester">Polyester</option>
+                        <option value="minky fleece">Minky Fleece</option>
+                    </select>
+                    <input type="radio" name="cart" class="add-to-cart-btn" data-product-name="Plushy 3"
+                        data-image="./images/plushy3.png">
+                    <label for="html">Add to cart</label>
+                </div>
+                <div class="cart">
+                    <h2 style="color: #F6E7EA;">Your Cart</h2>
+                    <img class="cart-image" src="" alt="Cart Item Image" style="display: none;">
+                    <ul class="cart-items"></ul>
+                    <div class="cart-total">
+                        <p>Total: $0.00</p>
+                        <button id="checkout-button" value="Set Cookie"
+                            onclick="window.location.href='custinfo.html'">Checkout</button>
+                    </div>
+                </div>
+
+</body>
+
+</html>
